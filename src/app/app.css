@@ -1,8 +1,8 @@
-/* Modern app styles for app.html */
+
 :root {
   --bg-1: #f5f7fb;
-  --accent-1: #6366f1; /* indigo-500 */
-  --accent-2: #8b5cf6; /* violet-500 */
+  --accent-1: #6366f1;
+  --accent-2: #8b5cf6;
   --muted: #64748b;
   --card-bg: #ffffff;
 }
@@ -28,7 +28,6 @@ h2 {
   font-weight: 600;
 }
 
-/* Make tables look like cards and be horizontally scrollable on small screens */
 table {
   width: 100%;
   max-width: 100%;
@@ -36,10 +35,10 @@ table {
   border-spacing: 0;
   background: var(--card-bg);
   border-radius: 12px;
-  overflow: hidden; /* keep rounded corners */
+  overflow: hidden;
   box-shadow: 0 8px 30px rgba(2,6,23,0.08);
   margin: 8px 0 28px 0;
-  display: block; /* allow overflow auto for responsiveness */
+  display: block;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
@@ -84,18 +83,15 @@ td:first-child {
   width: 120px;
 }
 
-/* Small utility classes used in the template */
 .border-b { border-bottom: 1px solid rgba(2,6,23,0.06); }
 .py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
 .px-4 { padding-left: 1rem; padding-right: 1rem; }
 .text-center { text-align: center; }
 
-/* Make tables feel lighter on very small screens while keeping horizontal scroll */
 @media (max-width: 640px) {
   body { padding: 18px; }
   thead th, td { padding: 10px 12px; }
   td { font-size: 0.9rem; }
 }
 
-/* Subtle footer / spacing helper */
 .app-footer-space { height: 48px; }
